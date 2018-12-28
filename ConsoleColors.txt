@@ -1,0 +1,24 @@
+<windows.h> needed
+
+//code//
+template<typename T>
+void printColor(T txt, int col, int br)
+{
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	SetConsoleTextAttribute(hConsole, col);
+	if (br == 1)
+	{
+		cout << txt << endl;
+	}
+	else
+	{
+		cout << txt;
+	}
+	SetConsoleTextAttribute(hConsole, 15);
+}
+
+
+for (int i = 1; i < 255; ++i)
+	{
+		cout << i << ". "; printColor("example", i, 1);
+	}
