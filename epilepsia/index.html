@@ -1,0 +1,58 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Warring Epilepsia Attack</title>
+
+  <script>
+    function start()
+    {
+      var red = "#cc181e";
+      var blue = "#2793e8";
+      var green ="#559900";
+      var tab = new Array(3);
+      tab[0]= green;
+      tab[1]= blue;
+      tab[2]= red;
+
+      var nr = Math.floor((Math.random()*3));
+      document.getElementById('przycisk').style.background= tab[nr];
+      var spr = tab[nr];
+
+      if(tab[nr]== red)
+      {
+        mojeoczy();
+      }
+    }
+
+    function mojeoczy()
+    {
+      var tab = new Array(8);
+      tab[0] = "#00FFFF";
+      tab[1] = "#8A2BE2";
+      tab[2] = "#7FFF00";
+      tab[3] = "#FF1493";
+      tab[4] = "#FF00FF";
+      tab[5] = "#F08080";
+      tab[6] = "#0000CD";
+      tab[7] = "#98FB98";
+
+      var losu = Math.floor((Math.random()*8));
+
+      document.getElementById('jeb').style.background = tab[losu];
+
+      setTimeout("mojeoczy()", 10);
+
+    }
+
+
+  </script>
+
+</head>
+<body>
+  <main>
+      <div id="jeb">
+    <input type="button" onclick="start()" value="PRESS" id="przycisk"/>
+      </div>
+  </main>
+</body>
+</html>

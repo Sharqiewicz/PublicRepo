@@ -1,0 +1,23 @@
+
+#przycisk
+{
+  margin-top: 38vh;
+  margin-left: 42vw;
+  background-color: #ee3a3f;
+  color: #efefef;
+  width: 16vw;
+  height: 12vh;
+  font-size: 8vh;
+}
+
+#przycisk:hover
+{
+  background-color: #cc181e ;
+}
+
+#jeb
+{
+  background-color: #222222;
+  width:100vw;
+  height:100vh;
+}
