@@ -1,0 +1,71 @@
+:root{
+    --sizeRect: 200px;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: #222222;
+}
+
+.rectangle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--sizeRect);
+    height: var(--sizeRect);
+    border: 2px solid black;
+    transition: 0.3s
+}
+
+#size:checked~.rectangle
+{
+    width: calc(2 * var(--sizeRect));
+    height: calc(2 * var(--sizeRect));
+}
+
+input#degL:checked~.rectangle
+{
+    transform:translate(-50%, -50%) rotate(-45deg);
+}
+
+input#degR:checked~.rectangle
+{
+    transform:translate(-50%, -50%) rotate(45deg);
+}
+
+input#black:checked~.rectangle
+{
+    background-color: black;
+}
+
+input#shadow:checked~.rectangle
+{
+    box-shadow: 0 0 92px 24px aqua;
+}
+
+input{
+    width: 50px;
+    height: 50px;
+}
+
+label{
+    font-size: 32px;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+}
+
+button:hover
+{
+    background-color: #cc0000;
+    cursor: pointer;
+}

@@ -100,7 +100,14 @@ const playerPosition = function(event)
 
 const enemyPosition = function()
 {
+    if( ballX+ballSize > 500 )
+    {
 
+    }
+    if( ballX+ballSize <= 500 && ballX > 150 )
+    {
+
+    }
 }
 
 const colisionP = function()

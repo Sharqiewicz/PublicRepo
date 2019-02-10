@@ -1,0 +1,55 @@
+<!DOCKTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<script>
+
+    function mojeoczy()
+    {
+        var tab = new Array(8);
+        tab[0] = "#00FFFF";
+        tab[1] = "#8A2BE2";
+        tab[2] = "#7FFF00";
+        tab[3] = "#FF1493";
+        tab[4] = "#FF00FF";
+        tab[5] = "#F08080";
+        tab[6] = "#0000CD";
+        tab[7] = "#98FB98";
+
+        losu = Math.floor((Math.random()*8));
+
+        document.querySelector('.rectangle').style.transition = `0s`;
+        document.querySelector('.rectangle').style.boxShadow = `0 0 92px 24px ${tab[losu]}`;
+        document.querySelector('body').style.background = `#000000`;
+
+        setTimeout("mojeoczy()", 10);
+    }
+</script>
+
+    <label for="size"> 2 x Size </label>
+    <input type="checkbox" id="size">
+
+    <label for="degL"> Rotate Left </label>
+    <input type="checkbox" id="degL">
+
+    <label for="degR"> Rotate Right </label>
+    <input type="checkbox" id="degR">
+
+    <label for="black"> Black </label>
+    <input type="checkbox" id="black">
+
+    <label for="shadow"> Lamp </label>
+    <input type="checkbox" id="shadow">
+
+    <div class="rectangle"></div>
+
+    <button onclick="mojeoczy()"> Party Time </button>
+
+
+
+
+</body>
+</html>
