@@ -1,0 +1,143 @@
+*
+{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box; /*nie wychodzimy poza okreslona przestrzen */
+}
+
+body{
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.rect
+{
+    flex-basis: 15%; /* 6 elementow w lini */
+    flex-grow: 1; /* przestrzen pomiedzy divami sie uzupelnia */
+    height: 31vh;
+    background-color: #111111;
+    border: 3px solid #fff;
+}
+
+.container
+{
+    height: 95%;
+    width: 95%;
+    background-color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hello
+{
+    width: 99%;
+    height: 4%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (orientation: portrait) /* Kiedy height > width */
+{
+    .rect
+    {
+        flex-basis: 30%;
+        height: 16vh;
+    }
+    .hello
+    {
+        display: none;
+    }
+}
+
+.red
+{
+    background-color: #cc0000;
+}
+.blue
+{
+    background-color: dodgerblue;
+}
+.green
+{
+    background-color: forestgreen;
+}
+.yellow
+{
+    background-color: yellow;
+}
+.purple
+{
+    background-color: purple;
+}
+.brown
+{
+    background-color: brown;
+}
+.violet
+{
+    background-color: violet;
+}
+.aqua
+{
+    background-color: aqua;
+}
+.orange
+{
+    background-color: chocolate;
+}
+.hidden
+{
+    background-color: #222222;
+}
+.hidden:hover
+{
+    background-color: #111111;
+}
+.off
+{
+    background-color: #333333;
+    border: none;
+}
+
+.end
+{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+    transform: translate(-50%, -50%) rotate(360deg) scale(2);
+    background-color: mediumpurple;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newGamee
+{
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: #84098b;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+}
+
+.newGamee:hover
+{
+    background-color: #620769;
+    box-shadow: 0 0 32px 10px white;
+}
+
+.newGamee:focus
+{
+    box-shadow: 0 0 32px 10px red;
+    background-color: #400547;
+}
