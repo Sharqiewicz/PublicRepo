@@ -1,0 +1,233 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.ramka{
+    border: 3px solid #ddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p
+{
+    text-align: justify;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+ul > li
+{
+    margin-left: 80px;
+}
+ol
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 2;
+}
+.relative
+{
+    margin-top: 100px;
+    position: relative;
+}
+.legend
+{
+    background-color: rgb(90, 94, 91);
+    border: 3px solid #c9d3c7;
+    margin: 0  auto 0 auto;
+}
+.legend::after
+{
+    color: #fff;
+    font-size: 48px;
+    content: "LEGEND";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #8b420f;
+    transition: 0.5s 0.6s;
+    text-shadow: 0.1em 0.1em 0.3em black;
+    border: 3px solid #ee5611;
+    z-index: 3;
+}
+
+.legend:hover::after
+{
+    bottom: -100%;
+}
+
+.rules
+{
+    background-color: dodgerblue;
+    border: 3px solid cornflowerblue;
+    margin: 0  auto 0 auto;
+}
+.rules::after
+{
+    color: #fff;
+    font-size: 48px;
+    content: "RULES";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: cornflowerblue;
+    transition: 0.5s 0.6s;
+    text-shadow: 0.1em 0.1em 0.3em black;
+    z-index: 2;
+}
+
+.rules:hover::after
+{
+    left: 100%;
+    content: " ";
+    border: none;
+    background-color: dodgerblue;
+}
+.logo
+{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 64px;
+    letter-spacing: 3px;
+    width: 750px;
+    margin: 80px auto 80px auto;
+    font-weight: 900;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.logo::before{
+    content: "";
+    position: absolute;
+    left:70px;
+    width: 50px;
+    height: 100%;
+    background-color: orangered;
+    transition: transform .3s ease-in;
+    will-change: transform;
+}
+
+.logo:hover::before{
+    transform: translateX(-50px);
+}
+
+.legendary{
+    background-color: rgba(232, 119, 0, 0.9);
+    padding-bottom: 50px;
+}
+
+.image{
+    overflow: hidden;
+
+}
+.image2{
+    opacity: 0.95;
+    margin: 0  auto 0 auto;
+}
+
+.rulons
+{
+    background-color: rgba(80, 78, 232, 0.9);
+    padding-bottom: 50px;
+}
+
+.solution
+{
+    background-color: rgba(0, 121, 44, 0.9);
+}
+
+.rozwiazanie
+{
+    background-color: #1e7e34;
+    margin: 0  auto 0 auto;
+}
+
+.rozwiazanie::after
+{
+    color: #fff;
+    font-size: 48px;
+    content: "SOLVE";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #075015;
+    text-shadow: 0.1em 0.1em 0.3em black;
+    border: 3px solid #106a14;
+    z-index: 3;
+    transition: 0.5s 0.6s;
+}
+.rozwiazanie:hover::after
+{
+    right: -100%;
+    left: 100%;
+}
+
+.ifrejm
+{
+
+    height: 600px;
+}
+
+.algorithm
+{
+    background-color: rgba(215, 191, 24, 0.9);
+    padding-bottom: 50px;
+}
+
+.algorytm, .skrypt
+{
+    background-color: rgb(102, 100, 101);
+    margin: 0  auto 0 auto;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.algorytm::after, .skrypt::after
+{
+    color: #fff;
+    font-size: 48px;
+    content: "ALGORITHM";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #665f05;
+    transition: 0.5s 0.6s;
+    text-shadow: 0.1em 0.1em 0.3em black;
+    border: 3px solid #969600;
+    z-index: 3;
+}
+
+.algorytm:hover::after, .skrypt:hover::after
+{
+    opacity: 0;
+}
+.skrypt::after
+{
+    content: "SCRIPT";
+}
+.footer
+{
+    width: 100vw;
+    background-color: #212121;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,143 @@
+<html lang="pl">
+<head>
+    <!-- NIE ROBIE STRONY BY BYŁA RESPONSYWNA, TO TYLKO PROJEKT NA MATEMATYKĘ! -->
+    <title>Hanoi Towers by Sharqi</title>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Prezentacja o wieżach Hanoi">
+    <meta name="keywords" content="algorytmy, wieże hanoi">
+    <meta name="author" content="Kacper Szarkiewicz">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styleeng.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-warning navbar-expand-lg sticky">
+
+    <div class="collapse navbar-collapse" id="mainmenu">
+
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item"><a href="#" class="nav-link ml-5"> Start </a></li>
+            <li class="nav-item"><a href="#legenda" class="nav-link ml-5"> Legend </a></li>
+            <li class="nav-item"><a href="#rulo" class="nav-link ml-5"> Rules </a></li>
+            <li class="nav-item"><a href="#roz" class="nav-link ml-5"> Solve </a></li>
+            <li class="nav-item"><a href="#algo" class="nav-link ml-5 "> Algorithm </a></li>
+
+        </ul>
+
+        <div class="mr-5"><a href="index.html"><img src="img/poland.png" width="51" height="51"></a></div>
+
+        <div class="mr-5"><a href="indexeng.html"><img src="img/eng.png" width="51" height="51"></a></div>
+
+    </div>
+
+</nav>
+
+    <main>
+
+        <div class="logo">
+
+            <h1> The issue of hanoi tower</h1>
+
+        </div>
+
+        <div class="container col-12">
+
+            <div class="legendary col-12" id="legenda">
+
+        <div class="relative col-12">
+
+        <div class="legend col-8">
+            <p>Legend</p>
+            <p>According to the Tibetan legend, the monks in the temple of Brahma solve this puzzle for 64 discs. The legend says that when monks finish the task,
+                the end of the world will come. Assuming that they follow the rules indicated in the legend, and that they perform 1 movement per second, the tower will take 264-1 = 18 446 744 073 709 551 615 (close to 18 and a half trillion) seconds, or about 584 billion years. For comparison: The Universe is around 13.7 billion years old ..</p>
+        </div>
+        </div>
+
+            </div>
+
+            <div class="image col-12 pt-5 pb-5">
+                <img src="img/monks.jpg" width="2006" height="1403" >
+            </div>
+
+
+
+
+
+            <div class="rulons col-12" id="rulo">
+
+                <div class="relative col-12">
+            <div class="rules col-8">
+                <p> Towers of Hanoi - Rules </p>
+
+                         <Ol>
+                             <li> The puzzle consists in rebuilding the tower from column A to column C </li>
+                             <li> We have a discs with different sizes </li>
+                             <li> They are stacked on the smallest to the largest </li>
+                             <li> Only one disc can be moved at a time </li>
+                             <li> You can not put a larger diameter disc on a smaller diameter disc </li>
+                        </ol>
+            </div>
+        </div>
+
+                <div class="image2 col-12 mt-5">
+                    <img src="img/towers.jpg" width="820" height="360">
+                </div>
+
+            </div>
+
+            <div class="solution col-12 m-5 pb-5" id="roz">
+
+                <div class="rozwiazanie col-8 mt-5 ">
+
+                    <p>Solve</p>
+                    <p>Here we can look at how to solve a task for a selected number of elements on 5 stakes (monks have to put it on 3!)</p>
+
+
+                </div>
+
+
+                <iframe src="http://towersofhanoi.info/Animate.aspx" marginheight="100" frameborder="0" class="col-11 mt-5 ifrejm"></iframe>
+
+            </div>
+
+            <div class="algorithm col-12 pt-5 mt-5" id="algo">
+
+                <div class="relative">
+                <div class="algorytm col-8 p-5">
+                    <p> Algorithm </p>
+                    <p> Solution for 1 element: AC </p>
+                    <p> Solution for 2 elements: AB <b> AC </b> BA </p>
+                    <p> Solution for 1 element: AC AB CB <b> AC </b> BA BC AC </p>
+                    <p> As you can see, there is always <b> AC </b>  traffic in the middle of the solution </p>
+                    <p> Before the occurrence of the middle movement, we copy the moves from the previous solution and <strong> REPLACE LETTERS B with C </strong> the letter A remains unchanged. </p>
+                    <p> After the middle traffic <b> AC </b>, we take the previous <i> moves (from before <b> AC </b>) </i> and <strong> REPLACE LETTERS A with B </strong> the letter C remains unchanged. </p>
+
+                </div>
+                    <script src="script.js"></script>
+                    <div class="skrypt col-8 p-5 mt-5" >
+                        <p>Time to show script ( script.js )</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+<footer>
+
+    <div class="footer col-12 pt-2 pb-2">Sharqiewicz Design &copy 2019</div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

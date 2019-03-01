@@ -1,0 +1,143 @@
+<html lang="pl">
+<head>
+    <!-- NIE ROBIE STRONY BY BYŁA RESPONSYWNA, TO TYLKO PROJEKT NA MATEMATYKĘ! -->
+    <title>Hanoi Towers by Sharqi</title>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Prezentacja o wieżach Hanoi">
+    <meta name="keywords" content="algorytmy, wieże hanoi">
+    <meta name="author" content="Kacper Szarkiewicz">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-warning navbar-expand-lg sticky">
+
+    <div class="collapse navbar-collapse" id="mainmenu">
+
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item"><a href="#" class="nav-link ml-5"> Start </a></li>
+            <li class="nav-item"><a href="#legenda" class="nav-link ml-5"> Legenda </a></li>
+            <li class="nav-item"><a href="#rulo" class="nav-link ml-5"> Zasady </a></li>
+            <li class="nav-item"><a href="#roz" class="nav-link ml-5"> Rozwiązanie </a></li>
+            <li class="nav-item"><a href="#algo" class="nav-link ml-5 "> Algorytm </a></li>
+
+        </ul>
+
+        <div class="mr-5"><a href="index.html"><img src="img/poland.png" width="51" height="51"></a></div>
+
+        <div class="mr-5"><a href="indexeng.html"><img src="img/eng.png" width="51" height="51"></a></div>
+
+    </div>
+
+</nav>
+
+    <main>
+
+        <div class="logo">
+
+            <h1> Problematyka wieży hanoi</h1>
+
+        </div>
+
+        <div class="container col-12">
+
+            <div class="legendary col-12" id="legenda">
+
+        <div class="relative col-12">
+
+        <div class="legend col-8">
+            <p>Legenda</p>
+            <p>Według tybetańskiej legendy mnisi w świątyni Brahmy rozwiązują te zagadkę dla 64 krążków. Legenda mówi, że gdy mnisi zakończą zadanie,
+            nastąpi koniec świata. Zakładając, że postępują zgodnie ze wskazanymi w legendzie zasadami,a także, że wykonują 1 ruch na sekundę, ułożenie wieży zajmie 264−1 = 18 446 744 073 709 551 615 (blisko 18 i pół tryliona) sekund, czyli około 584 miliardów lat. Dla porównania: Wszechświat ma około 13,7 mld lat..</p>
+        </div>
+        </div>
+
+            </div>
+
+            <div class="image col-12 pt-5 pb-5">
+                <img src="img/monks.jpg" width="2006" height="1403" >
+            </div>
+
+
+
+
+
+            <div class="rulons col-12" id="rulo">
+
+                <div class="relative col-12">
+            <div class="rules col-8">
+            <p>Wieże Hanoi - Zasady </p>
+
+        <ol>
+            <li> Łamigłówka polega na odbudowaniu wieży z kolumny A na kolumne C </li>
+            <li> Dane mamy krązki o różnych średnicach </li>
+            <li> Ułożone są na sobie od najmniejszego do największego </li>
+            <li> Na raz można przenosić tylko jeden krążek </li>
+            <li> Nie można kłaść krążka o większej średnicy na krążek o mniejszej średnicy </li>
+        </ol>
+            </div>
+        </div>
+
+                <div class="image2 col-12 mt-5">
+                    <img src="img/towers.jpg" width="820" height="360">
+                </div>
+
+            </div>
+
+            <div class="solution col-12 m-5 pb-5" id="roz">
+
+                <div class="rozwiazanie col-8 mt-5 ">
+
+                    <p>Rozwiązania</p>
+                    <p>Tutaj możemy się przyjrzeć jak rozwiązać zadanie dla wybranej ilości elementów na 5 palikach ( mnisi muszą ułożyc to na 3! )</p>
+
+
+                </div>
+
+
+                <iframe src="http://towersofhanoi.info/Animate.aspx" marginheight="100" frameborder="0" class="col-11 mt-5 ifrejm"></iframe>
+
+            </div>
+
+            <div class="algorithm col-12 pt-5 mt-5" id="algo">
+
+                <div class="relative">
+                <div class="algorytm col-8 p-5">
+                    <p>Algorytm</p>
+                    <p>Rozwiązanie dla 1 elementu: AC </p>
+                    <p>Rozwiązanie dla 2 elementów: AB <b>AC</b> BA</p>
+                    <p>Rozwiązanie dla 1 elementu: AC AB CB <b>AC</b> BA BC AC</p>
+                    <p>Jak widzimy, zawsze po środku rozwiązania znajduję się ruch <b>AC</b></p>
+                    <p>Przed wystąpieniem środkowego ruchu, kopiujemy ruchy z poprzedniego rozwiązania i <strong>ZAMIENIAMY MIEJSCAMI LITERY B z C </strong> litera A pozostaje niezmienna.</p>
+                    <p>Po wystąpieniu środkowego ruchu <b>AC</b>, bierzemy ruchy wcześniejsze <i>( z przed wystąpienia <b>AC</b> )</i> i <strong> ZAMIENIAMY MIEJSCAMI LITERY A z B</strong> litera C pozostaje niezmienna.</p>
+
+                </div>
+                    <script src="script.js"></script>
+                    <div class="skrypt col-8 p-5 mt-5" >
+                        <p>Czas na pokazanie skryptu ( script.js )</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+<footer>
+
+    <div class="footer col-12 pt-2 pb-2">Sharqiewicz Design &copy 2019</div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
