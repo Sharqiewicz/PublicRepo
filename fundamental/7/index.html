@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post" action="#" id="flexik">
+
+    <label for="username">Podaj nazwe użytkownika: </label>
+    <input type="text" id="username" >
+    <div id="feedback"></div>
+
+    <label for="password">Podaj hasło: </label>
+    <input type="password" id="password">
+
+    <input type="submit" id='przycisk' value="ZAREJESTRUJ SIĘ!">
+
+</form>
+
+<ul id="shoppingList">
+
+    <li class="coplete"><a href="itemDone.php?id=1"><em>Świeże </em>figi</a></li>
+    <li class="coplete"><a href="itemDone.php?id=2">orzeszki piniowe</a></li>
+    <li class="coplete"><a href="itemDone.php?id=3">miód</a></li>
+    <li class="coplete"><a href="itemDone.php?id=4">ocet balsamiczny</a></li>
+
+</ul>
+
+<div>
+<textarea id="message" cols="30" rows="4" placeholder="Write here"></textarea>
+<div id="charLeft">Chars left: 200</div>
+<div id="lastKey">Last Key: none</div>
+</div>
+
+<div>
+<form id="formSignUp">
+
+    <select id="package">
+        <option value="monthly">Monthly</option>
+        <option value="daily">Daily</option>
+    </select>
+    <div id="packageHint">Płacąc za rok, oszczędzasz 10zł!</div>
+    <p>Warunki</p><input type="checkbox" id="terms">
+    <div id="termsHint"></div>
+
+    <input type="submit" value="kup">
+
+</form>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

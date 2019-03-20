@@ -1,0 +1,24 @@
+
+
+.hot,.cool,.complete{
+    width: 280px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hot
+{
+    background-color: #ff3522;
+}
+.cool
+{
+    background-color: cornflowerblue;
+}
+.complete
+{
+    background-color: gray;
+}
