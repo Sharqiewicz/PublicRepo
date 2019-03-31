@@ -1,18 +1,65 @@
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 body
 {
     background-color: #dddddd;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-
+h1{
+    padding: 5px;
+}
+h1.red{
+    color: red;
+}
+h1.white
+{
+    color: white;
+}
+h1.blue{
+    color: darkblue;
+}
 .container
 {
-    margin-left:auto;
-    margin-right: auto;
-    width: 16vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 26vw;
+    height: 30vh;
     padding: 2vw;
     background-color: #fefefe;
-    margin-top: 10vh;
+    border: 2px solid #0c2461;
     box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-image: url("flague.jpg");
+    transition: 0.5s 0.6s;
+    z-index: 3;
+    background-size: 30vw 40vh;
+    background-repeat: no-repeat;
+}
+.container:hover::after
+{
+    opacity: 0.1;
+    z-index: -1;
+    transform: scale(4);
 }
 
 input[type=text],
@@ -21,27 +68,30 @@ input[type=password]
     width: 16vw;
     background-color: #efefef;
     color: #666666;
-    border: 2px solid #dddddd;
+    border: 2px solid #0c2461;
     border-radius: 5px;
     font-size: 20px;
     padding: 1vh 1vw;
     box-sizing: border-box;
     outline: none;
     margin-top:2vh;
+    text-align: center;
+    transition: 0.3s;
 }
 input[type=text]:focus,
 input[type=password]:focus
 {
     box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
-    border: 2px solid #a5cda5;
+    border: 2px solid #079992;
     background-color: #e9f3e9;
     color: #428c42;
+    width: 20vw;
 }
 
 input[type=submit]
 {
   width: 16vw;
-  background-color: #36b03c;
+  background-color: #38ada9;
   font-size: 20px;
   color: #fefefe;
   padding: 2vh 1vw;
@@ -54,7 +104,7 @@ input[type=submit]
 }
 input[type=submit]:hover
 {
-  background-color: #37b93d;
+  background-color: #079992;
 }
 input[type=submit]:focus
 {
