@@ -1,0 +1,42 @@
+body{
+    padding: 0 !important;
+    margin: 0 !important;
+    background-image: url("pig.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Container{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    position: relative;
+}
+
+.Eye{
+    position: absolute;
+    background-color: white;
+    width: 180px;
+    height: 100px;
+}
+.Eye:first-child{
+    top: 50px;
+    left: 395px;
+}
+
+.Eye{
+    top:50px;
+    left: 785px;
+}
+
+.Iris{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    width: 70px;
+    height: 70px;
+}
