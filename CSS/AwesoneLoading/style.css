@@ -1,0 +1,68 @@
+/* WORKSHOP BY DarkCode */
+body{
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar{
+  width: 20px;
+  height: 140px;
+  background: white;
+  display: inline-block;
+  transform-origin: bottom center;
+  animation: loading 1.5s ease-in-out infinite;
+}
+.bar1{
+  animation-delay: 0.1s;
+}
+.bar2{
+  animation-delay: 0.2s;
+}
+.bar3{
+  animation-delay: 0.3s;
+}
+.bar4{
+  animation-delay: 0.4s;
+}
+.bar5{
+  animation-delay: 0.5s;
+}
+.bar6{
+  animation-delay: 0.6s;
+}
+.bar7{
+  animation-delay: 0.7s;
+}
+.bar8{
+  animation-delay: 0.8s;
+}
+
+/* amimacja i jej etapy */
+
+@keyframes loading {
+  /* Poczatek animacji */
+  0%{
+    transform: scaleY(0.1);
+    background: #2ecc71;
+  }
+  /* Nastepnie zmienia kolor na  bardziej zielony*/
+  25%{
+    background: #0caa50
+  }
+  /* Skaluje sie do normalnej wielkosci */
+  50%{
+    transform: scaleY(1);
+    background: #0c8342;
+  }
+  /* Gdy skala bedzie 1 i skonczy sie wykonywanie 50% to skaluje sie do poczatkowej 0.1 */
+  100%{
+    transform: scaleY(0.1);
+    background: #0c5c31;
+  }
+}
