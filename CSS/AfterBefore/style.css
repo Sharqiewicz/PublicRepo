@@ -1,0 +1,83 @@
+div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+div::before
+{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: black;
+    content: "";
+    transition: 0.5s 1s;
+}
+
+a:hover~div::before
+{
+    top: 0;
+}
+
+a
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(30deg);
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid black;
+    padding: 25px 50px;
+    transition: 0.5s;
+
+    overflow: hidden; /*nie widac ::before*/
+}
+
+
+a:hover::before
+{
+    left: 0;
+}
+
+a::before
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    background-color: purple;
+    transition: 0.5s;
+
+    content: ""; /*zeby bylo widac element*/
+}
+
+a::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    height: 100%;
+    background-color: darkred;
+    transition: 0.5s 0.6s; /* 2 to opoznienie */
+}
+
+a:hover::after
+{
+    bottom: 0;
+}
+
+span
+{
+    display: inline-block;
+    transform: skew(-30deg);
+}
