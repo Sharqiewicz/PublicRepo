@@ -22,11 +22,79 @@
         },
         {
             "city": "Sosnowiec",
-            "region": "Mazowieckie"
+            "region": "Dolnoslaskie"
         },
         {
             "city": "Gdynia",
             "region": "Pomorskie"
+        },
+        {
+            "city": "Stargard",
+            "region": "Zachodniopomorskie"
+        },
+        {
+            "city": "Goleniow",
+            "region": "Zachodniopomorskie"
+        },
+        {
+            "city": "Swinoujscie",
+            "region": "Zachodniopomorskie"
+        },
+        {
+            "city": "Bydgoszcz",
+            "region": "Kujawsko-pomorskie"
+        },
+        {
+            "city": "Torun",
+            "region": "Kujawsko-pomorskie"
+        },
+        {
+            "city": "Zielona Gora",
+            "region": "Lubuskie"
+        },
+        {
+            "city": "Gorzow Wielkopolski",
+            "region": "Lubuskie"
+        },
+        {
+            "city": "Krakow",
+            "region": "Malopolskie"
+        },
+        {
+            "city": "Kielce",
+            "region": "Swietokrzyskie"
+        },
+        {
+            "city": "Rzeszow",
+            "region": "Podkarpackie"
+        },
+        {
+            "city": "Wroclaw",
+            "region": "Dolnoslaskie"
+        },
+        {
+            "city": "Opole",
+            "region": "Opolskie"
+        },
+        {
+            "city": "Bialystok",
+            "region": "Podlaskie"
+        },
+        {
+            "city": "Olsztyn",
+            "region": "Warminsko-mazurskie"
+        },
+        {
+            "city": "Lodz",
+            "region": "Lodzkie"
+        },
+        {
+            "city": "Tychy",
+            "region": "Dolnoslaskie"
+        },
+        {
+            "city": "Chorzow",
+            "region": "Dolnoslaskie"
         }
     ]
 }
