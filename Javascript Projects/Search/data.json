@@ -1,0 +1,32 @@
+{
+    "cities": [
+        {
+            "city": "Szczecin",
+            "region": "Zachodniopomorskie"
+        },
+        {
+            "city": "Poznan",
+            "region": "Wielkopolskie"
+        },
+        {
+            "city": "Warszawa",
+            "region": "Mazowieckie"
+        },
+        {
+            "city": "Katowice",
+            "region": "Slaskie"
+        },
+        {
+            "city": "Gdansk",
+            "region": "Pomorskie"
+        },
+        {
+            "city": "Sosnowiec",
+            "region": "Mazowieckie"
+        },
+        {
+            "city": "Gdynia",
+            "region": "Pomorskie"
+        }
+    ]
+}
