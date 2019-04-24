@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+}
+
+h1{
+    color: rgb(79, 126, 255);
+  font-size: 48px;
+}
+
+.collection-item{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  width: 800px;
+  padding: 10px;
+  border-bottom: none;
+  background-color: rgb(231, 231, 178);
+}
+.collection-item:last-child{
+  border: 1px solid black;
+}
+
+.todoAdder{
+  margin-top: 20px;
+  width: 800px;
+  padding: 10px;
+  text-align: start;
+}
+
+.collection-item:hover{
+   background-color: rgb(228, 228, 161);
+}
+
+.remover{
+  position: absolute;
+  left: -100px;
+  top:10px;
+  color: red;
+  cursor: pointer;
+}
+
+input[type="text"]{
+  margin-left: 20px;
+  width: 700px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  transition: 0.6s;
+}
+
+input[type="text"]:focus{
+    border-bottom: 2px solid rgb(79, 126, 255);
+}
